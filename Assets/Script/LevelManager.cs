@@ -141,7 +141,7 @@ public class LevelManager : MonoBehaviour
                 }
                 else
                 {
-
+                    ReduceLives();
                     enemy.gameObject.SetActive(false);
 
                 }
@@ -259,7 +259,7 @@ public class LevelManager : MonoBehaviour
 
     }
 
-    public void ReduceLives(int value)
+    public void ReduceLives(int value = 1)
     {
 
         SetCurrentLives(_currentLives - value);
